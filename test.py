@@ -13,3 +13,4 @@ print(f"bool_1的类型为：{bool_1}")
 print(f"bool_1的类型为：{bool_2}")
 #123
 #123
+#123
