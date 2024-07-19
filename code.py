@@ -1,4 +1,5 @@
 import math
+import unittest
 #打印
 # str1="Hello World!"
 # print(f"str1的内容为：{str1}")
@@ -44,7 +45,7 @@ import math
 #         print(temperture)
 #         print("完蛋")
 
-#while循环
+# while循环
 # sum=0
 # count=0
 # while (num :=input("请输入数字，按q结束:"))!='q': #:= 是海象运算符（walrus operator），它允许在表达式内部进行赋值操作。
@@ -53,6 +54,8 @@ import math
 #         sum+=num
 #         count+=1
 #         result = sum / count
+#     except ValueError:
+#         print("输入了不合理的数字")
 #     except ZeroDivisionError:   # 当尝试除以零时会引发 ZeroDivisionError 异常
 #         print("除数不能为零")
 #     except Exception as e:   # 捕获所有其他类型的异常
@@ -124,7 +127,23 @@ import math
 # print(zhangsan.calculate_monthly_pay())
 # print((lisi.calculate_monthly_pay()))
 
+#读写文件
+# f=open("./data.txt","r")  #r只读 w写入 a追加 r+读写
+# content=f.read()
+# print(content)
+# f.close()
 
+# with open("./data.txt","a",encoding="utf-8") as f: #不需要fclose
+#     f.write("HELLO WORLD4")
 
-
-
+#测试
+# class ShoppingList:
+#     def __init__(self, shopping_list):
+#         self.shopping_list = shopping_list
+#     def get_item_count(self):
+#         return len(self.shopping_list)
+#     def get_total_price(self):
+#         total_price = 0
+#         for price in self.shopping_list.values():
+#             total_price += price
+#         return total_price
