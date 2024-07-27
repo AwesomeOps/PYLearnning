@@ -23,13 +23,25 @@ import unittest
 # else:
 #     print("等于0")
 
-# #列表
-# shoping_list=["显示器","鼠标"]
-# shoping_list.append("U盘")
-# shoping_list.append("硬盘")
-# print(shoping_list)
-# shoping_list.remove("U盘")
-# print(shoping_list)
+#列表
+shoping_list=["显示器","鼠标"]   #添加列表
+shoping_list.append("U盘")
+shoping_list.append("硬盘")
+shoping_list.extend(['test1','test2'])
+print(shoping_list)
+shoping_list.remove("test1")    #删除列表
+print(f"{shoping_list},\n")
+del shoping_list[4]
+print(shoping_list)
+shoping_list.insert(1,"显卡")
+print(f"{shoping_list},\n")
+shoping_list.sort() #排序
+print(f"{shoping_list},\n")
+for list in shoping_list[:2]:   #遍历
+    print(list)
+print('\n')
+unimportant_shoping_list = shoping_list[:]    #复制
+print(unimportant_shoping_list)
 
 # #字典
 # contacts={"小明":"123",
