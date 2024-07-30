@@ -42,6 +42,12 @@ for list in shoping_list[:2]:   #遍历
 print('\n')
 unimportant_shoping_list = shoping_list[:]    #复制
 print(unimportant_shoping_list)
+print('\n')
+item='CPU'      #判断列表
+if item.lower() or item.upper() or item.title() in shoping_list:
+    print(f"需要购买{item}")
+else:
+    print(f'不需要购买{item}')
 
 # #字典
 # contacts={"小明":"123",
